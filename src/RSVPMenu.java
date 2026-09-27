@@ -12,7 +12,7 @@ public class RSVPMenu {
     System.out.println("C - Chicken");
     System.out.println("F - Fish");
     System.out.println("V - Vegetarian");
-    System.out.print("Enter your meal selection (C,F,or V): ");
+    System.out.print("Enter your meal selection (C,F, or V): ");
     mealChoice = in.nextLine();
 
     //Determine meal based on selection
