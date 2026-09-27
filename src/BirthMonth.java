@@ -8,15 +8,24 @@ public class BirthMonth {
 
         //Get the birth month from the user
         System.out.print("Enter your birth month (1-12): ");
-        birthMonth = in.nextInt();
 
-        //Determine if the birth month is valid
-        if (birthMonth >=1 && birthMonth <=12) {
-        System.out.println("Your birth month is: " + birthMonth);
+        if (in.hasNextInt()) {
+            birthMonth = in.nextInt();
+            in.nextLine();
 
-        }else {
-            System.out.println("You entered an incorrect month value: " + birthMonth);
 
+            //Determine if the birth month is valid
+            if (birthMonth >= 1 && birthMonth <= 12) {
+                System.out.println("Your birth month is: " + birthMonth);
+
+            } else {
+                System.out.println("You entered an incorrect month value: " + birthMonth);
+            }
+
+            } else {
+                String trash = in.nextLine();
+                System.out.println("You entered an incorrect month value: " + trash);
+            }
         }
     }
-}
+
